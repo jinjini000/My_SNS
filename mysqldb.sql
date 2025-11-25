@@ -9,7 +9,7 @@ create table users (
     url varchar(200)
 );
 
-create table posts(
+create table posts (
 	id int auto_increment primary key,
     useridx int not null,
     createAt datetime default now(),
@@ -17,6 +17,5 @@ create table posts(
     foreign key(useridx) references users(idx)
 );
 
-
-select * from posts;
 select * from users;
+select * from posts;
