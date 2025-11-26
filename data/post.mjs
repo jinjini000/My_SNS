@@ -5,7 +5,7 @@ import * as UserRepository from "./auth.mjs";
 const postSchema = new mongoose.Schema(
   {
     text: { type: String, require: true },
-    useridx: { type: String, require: true },
+    userIdx: { type: String, require: true },
     name: { type: String, require: true },
     userid: { type: String, require: true },
     url: String,
