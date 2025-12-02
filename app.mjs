@@ -3,11 +3,13 @@ import postsRouter from "./router/posts.mjs";
 import authRouter from "./router/auth.mjs";
 import { config } from "./config.mjs";
 import { connectDB } from "./db/database.mjs";
+import cors from "cors";
 
 const app = express();
 
 // json 통신사용
 app.use(express.json());
+app.use(cors());
 
 /* 라우팅 */
 // /post로 접근
